@@ -1637,12 +1637,13 @@ b {
 }
 
 /* Press */
-h3.press-article {
+.press-article {
 	font-family: "robotobold";
 	font-size: 1.3em;
 	text-transform: uppercase;
 	margin-bottom: 0;
-
+	color: #013068;
+	font-weight: normal;
 }
 
 /* Buttons */

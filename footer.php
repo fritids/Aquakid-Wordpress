@@ -1,18 +1,19 @@
+			<?php wp_reset_query(); ?>
 			<footer class="l-footer">
 	       		<nav class="l-nav l-nav-small clearfix">
-	        		<a href="http://www.aquakid.com/wordpress/faq/" class="nav-link nav-link-faq <?php echo is_page( 'Foire aux questions' ) ? ' is-active ': '' ?>">
+	        		<a href="http://www.aquakid.com/wordpress/faq/" class="nav-link nav-link-faq<?php echo is_page( 71 ) ? ' is-active': '' ?>">
 	        			<i class="icon-elephant"></i>
 	        			FAQ
 	        		</a>
-					<a href="http://www.aquakid.com/wordpress/jeux/" class="nav-link nav-link-jeux <?php echo is_page( 'Jeux' ) ? ' is-active ': '' ?>">
+					<a href="http://www.aquakid.com/wordpress/jeux/" class="nav-link nav-link-jeux<?php echo is_page( 98 ) ? ' is-active': '' ?>">
 	        			<i class="icon-chien"></i>
 	        			Jeux
 	        		</a>
-					<a href="http://www.aquakid.com/wordpress/presse/" class="nav-link nav-link-press <?php echo is_page( 'Presse' ) ? ' is-active ': '' ?>">
+					<a href="http://www.aquakid.com/wordpress/presse/" class="nav-link nav-link-press<?php echo is_page( 109 ) ? ' is-active': '' ?>">
 	        			<i class="icon-cheval"></i>
 	        			Presse
 	        		</a>
-	        		<a href="http://www.aquakid.com/wordpress/contact/" class="nav-link nav-link-contact <?php echo is_page( 'Contact' ) ? ' is-active ': '' ?>">
+	        		<a href="http://www.aquakid.com/wordpress/contact/" class="nav-link nav-link-contact<?php echo is_page( 30 ) ? ' is-active': '' ?>">
 	        			<i class="icon-crocodile"></i>
 	        			Contact
 	        		</a>

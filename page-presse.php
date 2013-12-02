@@ -14,21 +14,21 @@ Template Name: Presse
     	<div class="text-center">
     		<img class="formatted-img-full marginbottom2" src="<?php the_field( "image_centrale" ); ?>" alt="coloriage aquakid Bobun" />
     	</div>
-    	<div class="main-body formatted clearfix l-happiness">
+    	<div class="main-body clearfix l-happiness">
     		<div class="l-cols3 clearfix">
-			<?php query_posts( 'post_type=articledepresse&order=ASC' ) ?>
+				<?php query_posts( 'post_type=articledepresse&order=ASC' ) ?>
 				<?php if ( have_posts() ) : ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-    			<article class="col text-center">
-    				<h3 class="press-article"><?php the_field( "titre_web" ); ?></h3>
-    				<h4 class="formatted-title4"><?php the_field( "date_parution" ); ?></h4>
-    				<a href="<?php the_field( "image_complete" ); ?>" target="_blank" class="transition" >
-    					<img src="<?php the_field( "image_presse" ); ?>" alt="Juan - le directeur artistique d'Aquakid" />
-    				</a>
-    				<?php if( get_field( "lien_site" ) ): ?>
-    				<p><a href="<?php the_field( "lien_site" ) ?>" target="_blank">Visiter le site</a></p>
-    				<?php endif ?>
-    			</article>
+				<article class="col text-center">
+					<h3 class="press-article"><?php the_title() ?></h3>
+					<h4 class="formatted-title4"><?php the_field( "date_parution" ); ?></h4>
+					<a href="<?php the_field( "image_complete" ); ?>" target="_blank" class="transition" >
+						<img src="<?php the_field( "image_presse" ); ?>" alt="Juan - le directeur artistique d'Aquakid" />
+					</a>
+					<?php if( get_field( "lien_site" ) ): ?>
+					<p><a href="<?php the_field( "lien_site" ) ?>" target="_blank">Visiter le site</a></p>
+					<?php endif ?>
+				</article>
 				<?php endwhile; ?>
 				<?php endif; ?>
     		</div><!-- .l-cols2 -->

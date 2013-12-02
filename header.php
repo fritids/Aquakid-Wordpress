@@ -45,23 +45,23 @@
         <a class="header-logo" href="http://www.aquakid.com/wordpress/">Aquakid - L'eau officielle des enfants</a>
     </div>
     <nav class="l-nav l-constrained clearfix">
-        <a href="http://www.aquakid.com/wordpress/a-propos-de-nous/" class="nav-link nav-link-about <?php echo is_page( 'à propos de nous' ) ? ' is-active ': '' ?>">
+        <a href="http://www.aquakid.com/wordpress/a-propos-de-nous/" class="nav-link nav-link-about <?php echo is_page( 18 ) ? ' is-active ': '' ?>">
             <i class="icon-cat"></i>
             À propos<br /> de nous
         </a>
-        <a href="http://www.aquakid.com/wordpress/bouteilles-et-personnages/" class="nav-link nav-link-bottles <?php echo is_page( 'Bouteilles et personnages' ) ? ' is-active ': '' ?>">
+        <a href="http://www.aquakid.com/wordpress/bouteilles-et-personnages/" class="nav-link nav-link-bottles <?php echo is_page( 16 ) ? ' is-active ': '' ?>">
             <i class="icon-monkey"></i>
             Bouteilles et<br /> personnages
         </a>
-        <a href="http://www.aquakid.com/wordpress/notre-eau-magique/" class="nav-link nav-link-water <?php echo is_page( 'Notre eau magique' ) ? ' is-active ': '' ?>">
+        <a href="http://www.aquakid.com/wordpress/notre-eau-magique/" class="nav-link nav-link-water <?php echo is_page( 14 ) ? ' is-active ': '' ?>">
             <i class="icon-lion"></i>
             Notre eau<br /> magique
         </a>
-        <a href="http://www.aquakid.com/wordpress/le-secret-du-bonheur/" class="nav-link nav-link-happiness <?php echo is_page( 'Le secret du bonheur' ) ? ' is-active ': '' ?>">
+        <a href="http://www.aquakid.com/wordpress/le-secret-du-bonheur/" class="nav-link nav-link-happiness <?php echo is_page( 12 ) ? ' is-active ': '' ?>">
             <i class="icon-duck"></i>
             Le secret<br /> du bonheur
         </a>
-        <a href="http://www.aquakid.com/wordpress/ou-nous-trouver/" class="nav-link nav-link-findus <?php echo is_page( 'Où nous trouver' ) ? ' is-active ': '' ?>">
+        <a href="http://www.aquakid.com/wordpress/ou-nous-trouver/" class="nav-link nav-link-findus <?php echo is_page( 10 ) ? ' is-active ': '' ?>">
             <i class="icon-chick"></i>
             Où nous<br /> trouver
         </a>
