@@ -30,10 +30,10 @@
     <meta name="description" content="La joyeuse bande d'AQUAKID ne va pas tarder à débarquer dans ton quartier. Alors ouvre l'oeil et prépare toi pour la fiesta !">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
 
-    <link rel="shortcut icon" href="http://www.aquakid.com/wordpress/wp-content/themes/aquakid/img/favicon.ico">
+    <link rel="shortcut icon" href="<?php bloginfo('siteurl'); ?>/img/favicon.ico">
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
-    <script src="http://www.aquakid.com/wordpress/wp-content/themes/aquakid/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -45,23 +45,23 @@
         <a class="header-logo" href="http://www.aquakid.com/wordpress/">Aquakid - L'eau officielle des enfants</a>
     </div>
     <nav class="l-nav l-constrained clearfix">
-        <a href="http://www.aquakid.com/wordpress/a-propos-de-nous/" class="nav-link nav-link-about <?php echo is_page( 18 ) ? ' is-active ': '' ?>">
+        <a href="<?php bloginfo('siteurl'); ?>/a-propos-de-nous/" class="nav-link nav-link-about <?php echo is_page( 18 ) ? ' is-active ': '' ?>">
             <i class="icon-cat"></i>
             À propos<br /> de nous
         </a>
-        <a href="http://www.aquakid.com/wordpress/bouteilles-et-personnages/" class="nav-link nav-link-bottles <?php echo is_page( 16 ) ? ' is-active ': '' ?>">
+        <a href="<?php bloginfo('siteurl'); ?>/bouteilles-et-personnages/" class="nav-link nav-link-bottles <?php echo is_page( 16 ) ? ' is-active ': '' ?>">
             <i class="icon-monkey"></i>
             Bouteilles et<br /> personnages
         </a>
-        <a href="http://www.aquakid.com/wordpress/notre-eau-magique/" class="nav-link nav-link-water <?php echo is_page( 14 ) ? ' is-active ': '' ?>">
+        <a href="<?php bloginfo('siteurl'); ?>/notre-eau-magique/" class="nav-link nav-link-water <?php echo is_page( 14 ) ? ' is-active ': '' ?>">
             <i class="icon-lion"></i>
             Notre eau<br /> magique
         </a>
-        <a href="http://www.aquakid.com/wordpress/le-secret-du-bonheur/" class="nav-link nav-link-happiness <?php echo is_page( 12 ) ? ' is-active ': '' ?>">
+        <a href="<?php bloginfo('siteurl'); ?>/le-secret-du-bonheur/" class="nav-link nav-link-happiness <?php echo is_page( 12 ) ? ' is-active ': '' ?>">
             <i class="icon-duck"></i>
             Le secret<br /> du bonheur
         </a>
-        <a href="http://www.aquakid.com/wordpress/ou-nous-trouver/" class="nav-link nav-link-findus <?php echo is_page( 10 ) ? ' is-active ': '' ?>">
+        <a href="<?php bloginfo('siteurl'); ?>/ou-nous-trouver/" class="nav-link nav-link-findus <?php echo is_page( 10 ) ? ' is-active ': '' ?>">
             <i class="icon-chick"></i>
             Où nous<br /> trouver
         </a>

@@ -1680,7 +1680,6 @@ b {
 .form {
 	padding: 4em 30% 0;
 	background: url(/img/contact-characters.png) no-repeat top center;
-	background-size: 100%;
 }
 .form label {
 	display: none;
@@ -1708,6 +1707,11 @@ b {
 }
 .form-error {
 	border: solid 2px red !important;
+}
+@media (max-width: 1042px) {
+	.form {
+		background-size: 100%;
+	}
 }
 @media (max-width: 690px) {
 	.form {

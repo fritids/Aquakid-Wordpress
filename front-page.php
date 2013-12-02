@@ -10,30 +10,29 @@
         <meta name="description" content="Aquakid est l'eau minérale naturelle conçue par les enfants pour les enfants !!!">
         <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
 
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico">
         <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png" />
 
-        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
-		<script src="http://www.aquakid.com/wordpress/wp-content/themes/aquakid/js/vendor/modernizr-2.6.2.custom.min.js"></script>
-		
+        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">	
+        <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.6.2.custom.min.js"></script>	
     </head>
     <body class="l-home">
         <!--[if lt IE 7]>
             <p class="browsehappy">Vous utilisez un navigateur <strong>trop vieux</strong>. Nous vous recommandons de le <a href="http://browsehappy.com/">mettre à jour</a> pour pouvoir visualiser le site correctement.</p>
         <![endif]-->
 		
-  		<a href="http://www.aquakid.com/wordpress/a-propos-de-nous/" class="home-characters">
-  			<img id="home-characters" src="http://www.aquakid.com/wordpress/wp-content/themes/aquakid/img/aquakid-eau-officielle-des-enfants.png" alt="Aquakid - L'eau officielle des enfants" />
+  		<a href="<?php bloginfo('siteurl'); ?>/a-propos-de-nous/" class="home-characters">
+  			<img id="home-characters" src="<?php bloginfo('template_url'); ?>/img/aquakid-eau-officielle-des-enfants.png" alt="Aquakid - L'eau officielle des enfants" />
   		</a>
-  		<a href="http://www.aquakid.com/wordpress/a-propos-de-nous/" class="btn">Entre sur le site !</a>
+  		<a href="<?php bloginfo('siteurl'); ?>/a-propos-de-nous/" class="btn">Entre sur le site !</a>
 		
 		<div class="loader" id="loader">
 	    	<i class="loader-item"></i>
 	    </div>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="http://www.aquakid.com/wordpress/wp-content/themes/aquakid/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-		<script src="http://www.aquakid.com/wordpress/wp-content/themes/aquakid/js/main.js"></script>
+		<script>window.jQuery || document.write('<script src="<?php bloginfo('template_url'); ?>/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		<script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
 		
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -1,31 +1,31 @@
 			<?php wp_reset_query(); ?>
 			<footer class="l-footer">
 	       		<nav class="l-nav l-nav-small clearfix">
-	        		<a href="http://www.aquakid.com/wordpress/faq/" class="nav-link nav-link-faq<?php echo is_page( 71 ) ? ' is-active': '' ?>">
+	        		<a href="<?php bloginfo('siteurl'); ?>/faq/" class="nav-link nav-link-faq<?php echo is_page( 71 ) ? ' is-active': '' ?>">
 	        			<i class="icon-elephant"></i>
 	        			FAQ
 	        		</a>
-					<a href="http://www.aquakid.com/wordpress/jeux/" class="nav-link nav-link-jeux<?php echo is_page( 98 ) ? ' is-active': '' ?>">
+					<a href="<?php bloginfo('siteurl'); ?>/jeux/" class="nav-link nav-link-jeux<?php echo is_page( 98 ) ? ' is-active': '' ?>">
 	        			<i class="icon-chien"></i>
 	        			Jeux
 	        		</a>
-					<a href="http://www.aquakid.com/wordpress/presse/" class="nav-link nav-link-press<?php echo is_page( 109 ) ? ' is-active': '' ?>">
+					<a href="<?php bloginfo('siteurl'); ?>/presse/" class="nav-link nav-link-press<?php echo is_page( 109 ) ? ' is-active': '' ?>">
 	        			<i class="icon-cheval"></i>
 	        			Presse
 	        		</a>
-	        		<a href="http://www.aquakid.com/wordpress/contact/" class="nav-link nav-link-contact<?php echo is_page( 30 ) ? ' is-active': '' ?>">
+	        		<a href="<?php bloginfo('siteurl'); ?>/contact/" class="nav-link nav-link-contact<?php echo is_page( 30 ) ? ' is-active': '' ?>">
 	        			<i class="icon-crocodile"></i>
 	        			Contact
 	        		</a>
 	        	</nav>
-	        	<p class="footer-bottom">AQUAKID 2013 - <a href="http://www.aquakid.com/wordpress/mentions-legales/">Mentions légales</a></p>
+	        	<p class="footer-bottom">AQUAKID 2013 - <a href="<?php bloginfo('siteurl'); ?>/mentions-legales/">Mentions légales</a></p>
 	        </footer>
 	    </section>
 	    </div><!-- .l-constrained -->
 	
 	    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	    <script>window.jQuery || document.write('<script src="http://www.aquakid.com/wordpress/wp-content/themes/aquakid/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-	    <script src="http://www.aquakid.com/wordpress/wp-content/themes/aquakid/js/main.js"></script>
+	    <script>window.jQuery || document.write('<script src="<?php bloginfo('template_url'); ?>/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+	    <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
 	
 	    <script>
 	        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
