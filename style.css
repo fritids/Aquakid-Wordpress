@@ -1199,13 +1199,13 @@ b {
 		margin-right: 1em;
 	}
 	.l-contact .icon-twitter {
-		background-position: -761px -10px;
+		background-position: -711px -10px;
 		background-size: 1257px 72px;
 		width: 56px;
 		height: 56px;
 	}
 	.l-contact .icon-facebook {
-		background-position: -818px -11px;
+		background-position: -766px -11px;
 		background-size: 1257px 72px;
 		width: 56px;
 		height: 56px;
@@ -1280,7 +1280,8 @@ b {
    ========================================================================== */
 
 /* Formatted */
-.formatted hr {
+.formatted hr,
+.formatted-hr {
 	margin: 3em 0;
 	border-top-color: #5db4ca;
 	clear: both;
@@ -1315,13 +1316,15 @@ b {
 .formatted-title,
 .formatted h2 {
 	font-family: 'whimsy';
-	color: #0079d3;
 	font-size: 2em;
 	text-transform: uppercase;
 	font-weight: normal;
 }
 .formatted h2 {
 	color: #003672;
+}
+.formatted-title {
+	color: #0079d3 !important;
 }
 .formatted-subtitle {
 	color: #013068;
@@ -1337,7 +1340,7 @@ b {
 	font-weight: normal;
 }
 .formatted-title3,
-.formatted h3 {
+.formatted h4 {
 	color: #0079cd;
 	font-family: 'robotobold';
 	font-weight: normal;
@@ -1346,7 +1349,7 @@ b {
 	margin: 2em 0 0;
 }
 .formatted-title4,
-.formatted h4 {
+.formatted h5 {
 	color: #0079cd;
 	font-family: 'robotolight';
 	font-weight: normal;
@@ -1485,6 +1488,7 @@ b {
 .team-function {
 	margin: 0 0 .5em;	
 	font-size: .9em;
+	font-weight: normal;
 }
 .team-patricio .team-name,
 .team-patricio .team-function {
@@ -1888,16 +1892,16 @@ b {
 
 /* Font Colors */
 .f-orange {
-	color: #e38000;
+	color: #e38000 !important;
 }
 .f-blue {
-	color: #0079cd;
+	color: #0079cd !important;
 }
 .f-darkblue {
-	color: #003672;
+	color: #003672 !important;
 }
 .f-green {
-	color: #097f00;
+	color: #097f00 !important;
 }
 
 /* Links */

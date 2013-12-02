@@ -26,4 +26,4 @@ $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 $headers .= 'From: '.$lastname.' '.$firstname.' <'.$email.'>' . "\r\n";
 
-mail("contact@jonathanpath.com", "Message sur Aquakid.com", $body, $headers); 
+mail("bonjour@aquakid.com", "Message sur Aquakid.com", $body, $headers); 

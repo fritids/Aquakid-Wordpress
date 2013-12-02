@@ -11,29 +11,29 @@ Template Name: A propos
 	        		<h1 class="main-title"><?php the_title() ?></h1>
 		        	<h2 class="main-subtitle"><?php the_field( "sous_titre" ); ?></h2>
 	        	</div><!-- .main-header -->
-	        	<div class="main-body formatted clearfix l.about">
+	        	<div class="main-body clearfix l.about">
 	        		<div class="l-cols2 clearfix">
 		        		<img class="col formatted-img-full" src="<?php the_field( "bloc1_image" ); ?>" alt="La mission d'Aquakid" />
 		        		<div class="col about-mission">
 			        		<h2 class="formatted-title"><?php the_field( "bloc1_titre" ); ?></h2>        		
-			        		<ul>
+			        		<ul class="formatted">
 			        			<?php the_field( "bloc1_texte" ); ?>
 			        		</ul>
 		        		</div><!-- .col -->
 	        		</div><!-- .l-cols2 -->
-	        		<hr />
+	        		<hr class="formatted-hr" />
 	        		<h2 class="formatted-title"><?php the_field( "bloc2_titre" ); ?></h2>       
-	        		<ul class="l-cols3 clearfix formatted-warning">
+	        		<ul class="l-cols3 clearfix formatted-warning formatted">
 	        			<li class="col"><?php the_field( "bloc2_colonne_gauche" ); ?></li>
 	        			<li class="col"><?php the_field( "bloc2_colonne_centrale" ); ?></li>
 	        			<li class="col"><?php the_field( "bloc2_colonne_droite" ); ?></li>
 	        		</ul>		
-	        		<p><small><i>(Plus d'informations sur la rubrique <a href="faq.html">FAQ</a>)</i></small></p>
-	        		<hr />
+	        		<p><small><i>(Plus d'informations sur la rubrique <a href="/wordpress/?p=71">FAQ</a>)</i></small></p>
+	        		<hr class="formatted-hr" />
 	        		<img class="formatted-img-right" src="<?php the_field( "bloc3_image" ); ?>" alt="L'origine d'Aquakid" />
 	        		<h2 class="formatted-title"><?php the_field( "bloc3_titre" ); ?></h2>
 	        		<?php the_field( "bloc3_texte" ); ?>
-	        		<hr />
+	        		<hr class="formatted-hr" />
 	        		<h2 class="formatted-title"><?php the_field( "bloc4_titre" ); ?></h2>
 	        		<p><?php the_field( "bloc4_texte" ); ?></p>
 	        		<article class="team team-juan">
