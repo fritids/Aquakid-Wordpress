@@ -1220,22 +1220,24 @@ b {
 	background: url('/img/woodsign.png') no-repeat center top;
 	height: 30em;
 }
-.water-table {
+.l-water table {
 	color: white;
 	position: relative;
 	top: 5.1em;
 	left: 2.5em;
 }
-.l-water td {
+.l-water td,
+.l-water th {
 	padding: .1em .5em;
 	border-bottom: 1px solid transparent;
 	text-align: left;
 	text-shadow: 0 1px 1px rgba(0,0,0,.5);
 	font-family: 'robotobold';
 }
-.l-water .water-title {
+.l-water th {
 	font-size: 1.3em;
 	text-align: center;
+	font-weight: normal;
 }
 @media (max-width: 560px) {
 	.l-water {
@@ -1296,7 +1298,8 @@ b {
 	padding: .2em 0 1em 2.5em;
 	background: url(/img/warning.png) no-repeat left top;
 }
-.formatted-img-full {
+.formatted-img-full,
+.formatted img {
 	max-width: 100%;
 }
 .formatted-img-left {
@@ -1309,12 +1312,16 @@ b {
 	margin: 0 0 1em 1em;
 	max-width: 100%;
 }
-.formatted-title {
+.formatted-title,
+.formatted h2 {
 	font-family: 'whimsy';
 	color: #0079d3;
 	font-size: 2em;
 	text-transform: uppercase;
 	font-weight: normal;
+}
+.formatted h2 {
+	color: #003672;
 }
 .formatted-subtitle {
 	color: #013068;
@@ -1322,13 +1329,15 @@ b {
 	font-size: 1.1875em;
 	margin: -1em 0 2em;
 }
-.formatted-title2 {
+.formatted-title2,
+.formatted h3 {
 	font-size: 1.625em; /* 26/16 */
 	color: #0079cd;
 	font-family: 'robotobold';
 	font-weight: normal;
 }
-.formatted-title3 {
+.formatted-title3,
+.formatted h3 {
 	color: #0079cd;
 	font-family: 'robotobold';
 	font-weight: normal;
@@ -1336,7 +1345,8 @@ b {
 	font-size: 1.1em;
 	margin: 2em 0 0;
 }
-.formatted-title4 {
+.formatted-title4,
+.formatted h4 {
 	color: #0079cd;
 	font-family: 'robotolight';
 	font-weight: normal;
@@ -1498,11 +1508,12 @@ b {
 	vertical-align: middle;
 }
 .character-name {
-	font-size: 2.6875em; /* 43/16 */
+	font-size: 2.6875em !important; /* 43/16 */
+	color: #013068 !important;
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'robotobold';
-	margin-top: 0;
+	margin: 0 0 1em !important;
 }
 .character-bottle,
 .character-picture,

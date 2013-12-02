@@ -26,7 +26,7 @@ $(document).ready(function () {
     	} else {
 	    	$.ajax({
 		    	async: false,
-	            url:"send-mail.php",
+	            url:"/wordpress/wp-content/themes/aquakid/send-mail.php",
 	            type: "POST",
 	            dataType: "script",
 	            data: $('#contact-form').serialize(),

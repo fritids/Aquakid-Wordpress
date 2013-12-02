@@ -7,13 +7,19 @@ Template Name: Jeux
 
 <div class="l-constrained">
 	        <section class="l-main">
+	        	<?php if (have_posts()) : ?>
+	        	<?php while (have_posts()) : the_post(); ?>
 	        	<div class="main-header">
 	        		<h1 class="main-title"><?php the_title() ?></h1>
 		        	<h2 class="main-subtitle"><?php the_field( "sous_titre" ); ?></h2>
 	        	</div><!-- .main-header -->
 	        	<div class="main-body formatted clearfix l-happiness">
+	        		<?php the_content() ?>
+	        		<hr />
+        		<?php endwhile; ?>
+        		<?php endif; ?>	
 	        		<div class="l-cols2 clearfix">
-					<?php query_posts( 'post_type=dessin&order=ASC' ) ?>
+						<?php query_posts( 'post_type=dessin&order=ASC' ) ?>
 						<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 	        			<div class="col text-center">

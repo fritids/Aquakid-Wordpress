@@ -17,17 +17,22 @@ Template Name: Bouteilles et Personnages
         			<h2 class="formatted-title"><?php the_field( "titre_presentation" ); ?></h2>  
         			<p class="formatted-subtitle"><?php the_field( "sous-titre_presentation" ); ?></p>
 					<?php query_posts( 'post_type=personnage&order=ASC' ) ?>
-						<?php if ( have_posts() ) : ?>
+						<?php 
+						$count = 0;
+						if ( have_posts() ) : ?>
 							<?php while ( have_posts() ) : the_post(); ?>
+								<?php if ($count != 0): ?>
+								<hr />		
+								<?php endif ?>
 								<article class="character">
-									<h3 class="character-name"><?php the_field( "nom_personnage" ); ?></h3>
+									<h3 class="character-name"><?php the_title(); ?></h3>
 									<img class="character-bottle" src="<?php the_field( "image_bouteille" ); ?>" alt="la bouteille de <?php the_field( "nom_personnage" ); ?>" />
 									<img class="character-picture" src="<?php the_field( "image_personnage" ); ?>" alt="<?php the_field( "nom_personnage" ); ?>" />
-									<div class="character-container character-<?php the_field( "nom_personnage" ); ?>">
+									<div class="character-container character-<?php echo strtolower( get_the_title() ); ?>">
 										<p class="character-description"><?php the_field( "texte_personnage" ); ?></p>
 									</div>
 								</article>
-								<?php the_field( "separation" ); ?>
+							<?php $count++ ?>
 							<?php endwhile; ?>
 						<?php endif; ?>	
         			<div class="margintop2"></div>        	

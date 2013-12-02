@@ -6,7 +6,27 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><?php the_title(); ?></title>
+    <title><?php
+    	/*
+    	 * Print the <title> tag based on what is being viewed.
+    	 */
+    	global $page, $paged;
+    
+    	wp_title( '|', true, 'right' );
+    
+    	// Add the blog name.
+    	bloginfo( 'name' );
+    
+    	// Add the blog description for the home/front page.
+    	$site_description = get_bloginfo( 'description', 'display' );
+    	if ( $site_description && ( is_home() || is_front_page() ) )
+    		echo " | $site_description";
+    
+    	// Add a page number if necessary:
+    	if ( $paged >= 2 || $page >= 2 )
+    		echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
+    
+    	?></title>
     <meta name="description" content="La joyeuse bande d'AQUAKID ne va pas tarder à débarquer dans ton quartier. Alors ouvre l'oeil et prépare toi pour la fiesta !">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
 
